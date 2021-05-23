@@ -12,7 +12,7 @@ import { getMainDefinition } from "@apollo/client/utilities";
 import { WebSocketLink } from "@apollo/client/link/ws";
 
 let httpLink = createHttpLink({
-	uri: "http://localhost:5000/",
+	uri: "https://mess-lite-server.herokuapp.com/",
 });
 
 const authLink = setContext((_, { headers }) => {
